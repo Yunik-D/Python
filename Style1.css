@@ -1,0 +1,637 @@
+/*===============================================
+            CONFIGURAÇÕES GERAIS
+===============================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #dddddd;
+  color: #000000;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+body>* {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*===============================================
+               TÍTULOS E TEXTOS
+===============================================*/
+h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(66, 66, 66);
+
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 0.3em;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.3em;
+  letter-spacing: 0.02em;
+}
+
+strong {
+  color: #d35400;
+
+}
+
+ul {
+  list-style: inside disc;
+  margin-bottom: 1.5em;
+  color: #555;
+}
+
+/*===============================================
+               HUD DE NAVEGAÇÃO
+===============================================*/
+nav {
+  text-align: center;
+  margin-bottom: 2em;
+  background-color: #2f3031;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  box-shadow: 3px 3px 6px rgba(70, 70, 69, 0.973);
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #00a1fe;
+  font-weight: 600;
+  margin: 0 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #00ffc3;
+  outline: none;
+  text-shadow: 0 0 8px #00ffc3aa;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #008cff;
+  font-weight: 600;
+  margin: 0 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #00ffc3;
+  transition: width 0.3s ease;
+}
+
+
+nav a:hover::after,
+nav a:focus::after {
+  width: 100%;
+}
+
+
+
+/*===============================================
+           BOTÃO TOGGLE (DARK MODE)
+===============================================*/
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 15px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 5px;
+
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:
+    inset -4px -4px 6px rgba(255, 255, 255, 0.8),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.1),
+    3px 3px 8px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #dcdcdc);
+  box-shadow:
+    -2px -2px 4px rgba(255, 255, 255, 0.6),
+    2px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
+}
+
+input:checked+.slider {
+  background: linear-gradient(145deg, #3ac66e, #4cd964);
+  justify-content: flex-end;
+  box-shadow:
+    inset -2px -2px 6px rgba(255, 255, 255, 0.3),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.2),
+    0 0 12px rgba(76, 217, 100, 0.6);
+}
+
+input:checked+.slider::before {
+  transform: translateX(26px);
+  background: radial-gradient(circle at 30% 30%, #dfffea, #b4f3ca);
+  box-shadow:
+    -2px -2px 5px rgba(255, 255, 255, 0.6),
+    2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.theme-toggle-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.theme-icon {
+  font-size: 1.4rem;
+  color: #ffaa00;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+
+/*===============================================
+               LINKS GERAIS
+===============================================*/
+a {
+  color: #2980b9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #1c5980;
+  outline: none;
+}
+
+/*===============================================
+           ACORDION (GAVETAS)
+===============================================*/
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.item {
+  border-left: 5px solid #3572A5;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.item input {
+  display: none;
+}
+
+.title {
+  display: block;
+  padding: 1rem;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.title:hover {
+  background-color: #e0e0e0;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  color: #444;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.item input:checked~.content {
+  max-height: 800px;
+  padding: 1rem;
+}
+
+/*===============================================
+             CÓDIGO E BLOCO <pre>
+===============================================*/
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2em;
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #c7254e;
+}
+ 
+figcaption{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+/*===============================================
+   FORMULÁRIOS E BOTÕES (CALCULADORA E JOGOS)
+===============================================*/
+#calcForm button,
+#guessBtn,
+#restartBtn {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+#calcForm button:hover,
+#guessBtn:hover,
+#restartBtn:hover {
+  background-color: #1c5980;
+}
+
+#calcForm button[type="reset"] {
+  background-color: #c0392b;
+
+}
+
+#calcForm button[type="reset"]:hover {
+  background-color: #922b21;
+}
+
+#calcForm select {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 2px solid #2980b9;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+#calcForm select:focus {
+  outline: none;
+  border-color: #1c5980;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+#guessInput {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 2px solid #2980b9;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 10px;
+}
+
+#guessInput:focus {
+  border-color: #1c5980;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+#guessMessage {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #d35400;
+}
+
+/*===============================================
+               JANELA TOOLTIP
+===============================================*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltip-content {
+  visibility: hidden;
+  width: 220px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip:hover .tooltip-content {
+  visibility: visible;
+}
+
+.tooltip img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/*===============================================
+               MODO ESCURO / TEMA
+===============================================*/
+body.dark {
+  background: #3a3838;
+  color: #fff;
+}
+
+body.dark h1,
+body.dark h2 {
+  color: #ffd43b;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+}
+
+body.dark p,
+body.dark li {
+  color: #ffffff;
+}
+
+body.dark code {
+  background-color: #333;
+  color: #ffffff;
+}
+
+body.dark .tooltip .tooltip-content {
+  background-color: #222;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark .accordion .item {
+  background-color: #ffffff;
+
+}
+
+body.dark .accordion .content p {
+  color: #000000;
+
+}
+
+body.dark .accordion .title {
+  color: #000000;
+}
+
+body.dark .accordion .item {
+  border-left-color: #00c8ff;
+}
+
+
+body.dark .recommend-box {
+  background-color: #2b2b2b;
+  border-left-color: #00c8ff;
+  color: #fff;
+}
+
+body.dark .recommend-box h3 {
+  color: #ffd43b;
+}
+
+body.dark .recommend-btn {
+  background-color: #00c8ff;
+  color: #ffffff;
+}
+
+body.dark .recommend-btn:hover {
+  background-color: #0094b7;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.4);
+}
+
+body.dark .resource-list {
+  background-color: #3a3a3a;
+  border-color: #00c8ff;
+}
+
+body.dark .highlight-word {
+  background-color: #4d3926;
+  color: #ffe0b2;
+}
+
+
+body.dark .recommendation-box {
+  background-color: #2b2b2b;
+  border-left-color: #00c8ff;
+  color: #fff;
+}
+
+body.dark .recommendation-btn {
+  background-color: #00c8ff;
+  color: #ffffff;
+}
+
+body.dark .recommendation-btn:hover {
+  background-color: #0094b7;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.4);
+}
+
+
+/*===============================================
+               RECOMENDAÇÕES
+===============================================*/
+
+.recommend-box {
+  background-color: #fdfdfd;
+  border-left: 5px solid #2980b9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+  transition: transform 0.3s ease;
+}
+
+.recommend-box:hover {
+  transform: scale(1.02);
+}
+
+
+.recommend-box h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+}
+
+
+.recommend-btn {
+  display: inline-block;
+  background-color: #2980b9;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 1em;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommend-btn:hover {
+  background-color: #1c5980;
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.4);
+}
+
+
+.thumbnail-highlight {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 20px auto;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail-highlight:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+.highlight-word {
+  color: #d35400;
+  font-weight: bold;
+  background-color: #fff2e6;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+
+.recommendation-box {
+  background-color: #fdfdfd;
+  border-left: 5px solid #2980b9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+  transition: transform 0.3s ease;
+}
+
+.recommendation-box:hover {
+  transform: scale(1.02);
+}
+
+.recommendation-btn {
+  display: inline-block;
+  background-color: #2980b9;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 1em;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-btn:hover {
+  background-color: #1c5980;
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.4);
+}
+
+/*===============================================
+             RESPONSIVIDADE BÁSICA
+===============================================*/
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    margin: 0 8px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+}

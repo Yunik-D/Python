@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Características do Python</title>
+    <link rel="stylesheet" href="Style1.css">
+    <link rel="icon" href="https://www.hostinghome.in/wp-content/uploads/2022/11/python_icon.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <h1>Características da Linguagem Python</h1>
+    <nav>
+        <a href="Inicio.html">Início</a>|
+        <a href="Características.html">Características</a>|
+        <a href="Projetos.html">Projetos em Python</a>|
+        <a href="Recomendacoes.html">Recomendações</a>
+        <span class="theme-toggle-container">
+            <span class="theme-icon" id="theme-icon-left">☀️</span>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            <span class="theme-icon" id="theme-icon-right">🌙</span>
+        </span>
+
+    </nav>
+
+    <div class="accordion">
+        <div class="item">
+            <input type="checkbox" id="sintaxe">
+            <label for="sintaxe" class="title">Sintaxe</label>
+            <div class="content">
+                <p class="dark">Python é uma linguagem que valoriza a clareza. Sua principal característica sintática é
+                    o uso
+                    obrigatório da indentação (espaços ou tabulação) para delimitar blocos de código. Isso substitui o
+                    uso de chaves {} usado em outras linguagens. Cada bloco, como os de if, for ou funções, deve estar
+                    indentado de forma consistente. Além disso, não se usa ponto e vírgula ao final das instruções.
+                    Comentários são feitos com #, e a linguagem é case sensitive, ou seja, diferencia maiúsculas de
+                    minúsculas: Nome e nome são variáveis diferentes.
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="variaveis">
+            <label for="variaveis" class="title">Variáveis</label>
+            <div class="content">
+                <p class="dark">As variáveis em Python são criadas por atribuição direta, sem necessidade de declarar o
+                    tipo. A
+                    linguagem infere o tipo automaticamente (tipagem dinâmica). Nomes de variáveis devem começar com
+                    letra ou underline e não podem conter espaços ou caracteres especiais (exceto _).
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="funcoes">
+            <label for="funcoes" class="title">Tipo de Dados</label>
+            <div class="content">
+                <p class="dark">Python trabalha com vários tipos de dados principais. Os tipos numéricos incluem int,
+                    que representa
+                    números inteiros; float, que são números decimais; e complex, que são números complexos com parte
+                    real e imaginária. Para texto, utiliza-se o tipo str, que são sequências de caracteres escritas
+                    entre aspas simples ou duplas. Já os booleanos, do tipo bool, podem assumir os valores True ou
+                    False, representando verdadeiro ou falso.
+
+                    Além desses, Python possui coleções para armazenar múltiplos valores. As listas (list) são coleções
+                    mutáveis, ou seja, você pode alterar seus elementos depois de criadas; um exemplo de lista é [1, 2,
+                    3]. As tuplas (tuple) são semelhantes às listas, mas imutáveis, o que significa que seus valores não
+                    podem ser modificados depois de definidos; um exemplo seria (1, 2). Os dicionários (dict) armazenam
+                    pares de chave e valor, permitindo acesso rápido aos dados; por exemplo, {"chave": "valor"}. Por
+                    fim, os conjuntos (set) são coleções não ordenadas de elementos únicos, como {1, 2, 3}, úteis para
+                    operações matemáticas entre grupos de dados.</p>
+            </div>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="biblioteca">
+            <label for="biblioteca" class="title">Biblioteca Externa</label>
+            <div class="content">
+                <p class="dark"><strong>1. NumPys:</strong>
+                    É a base para computação numérica em Python. Facilita o trabalho com arrays multidimensionais e
+                    oferece funções matemáticas eficientes para manipulação desses dados. Essencial para ciência de
+                    dados, análise numérica e machine learning.
+                    <br>
+                    <strong>2. Pandas:</strong>
+                    Especializada em análise e manipulação de dados. Oferece estruturas como DataFrames que tornam muito
+                    fácil organizar, limpar e transformar dados, principalmente em forma tabular. Muito usada em data
+                    science e estatística.
+                    <br>
+                    <strong>3. Matplotlib:</strong>
+                    A principal biblioteca para criar gráficos e visualizações em Python. Permite gerar gráficos simples
+                    ou complexos, estáticos ou interativos, para ajudar a interpretar e apresentar dados visualmente.
+
+                </p>
+            </div>
+        </div>
+
+
+        <h2>Exemplo 1: Olá, mundo!</h2>
+        <figure>
+            <pre>
+<code>print("Olá, mundo!")</code>
+    </pre>
+            <figcaption>Este comando exibe a mensagem "Olá, mundo!" na tela.
+                A função print() serve para mostrar textos ou valores no console (ou
+                terminal).</figcaption>
+            <h2>Exemplo 2: Soma de dois números</h2>
+            <pre>
+<code>
+a = int(input("Digite o primeiro número: "))
+b = int(input("Digite o segundo número: "))
+print("Soma:", a + b)
+</code>
+    </pre>
+            <figcaption>O código solicita ao usuário dois números inteiros por meio da função input(),
+                converte as entradas para o tipo int, armazena os valores nas variáveis a e b, e exibe o resultado da
+                soma dessas variáveis usando a função print().</figcaption>
+            <h2>Data e Horas Atuais</h2>
+            <pre>
+<code>
+from datetime import datetime
+agora = datetime.now()
+print("Data e hora atuais:", agora.strftime("%d/%m/%Y %H:%M:%S"))
+</code>
+        </pre>
+            <figcaption>
+                O código importa a classe `datetime` do módulo `datetime`, obtém a data e hora atuais com
+                `datetime.now()`, armazena esse valor na variável `agora`, e imprime a data e hora formatadas no padrão
+                dia/mês/ano horas\:minutos\:segundos usando o método `strftime()`.
+            </figcaption>
+        </figure>
+        <h2>Jogo da Cobrinha em Pyhton</h2>
+        <div style="text-align: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eehcQR5lrAA?si=M-iBwG07AEvF00XY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <script src="darkmode.js"></script>
+
+</body>
+
+</html>
