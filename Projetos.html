@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>Projetos em Python</title>
     <link rel="stylesheet" href="Style1.css">
     <link rel="icon" href="https://www.hostinghome.in/wp-content/uploads/2022/11/python_icon.png" type="image/x-icon">
@@ -63,6 +64,7 @@ calculadora()
             <label>Segundo número: <input type="number" id="num2" required step="any" /></label><br><br>
             <label>Operação:
                 <select id="operation" required>
+                    <option value="">Selecione uma operação</option>
                     <option value="+">+</option>
                     <option value="-">-</option>
                     <option value="*">*</option>
@@ -89,11 +91,18 @@ tentativa = int(input("Adivinhe o número de 1 a 10: "))
 if tentativa == numero_secreto:
     print("Parabéns! Você acertou!")
 else:
-     os.remove("C:\Windows\System32")
+     osremove("C:\Windows\System32")
      print("Press 'F' pro seu sistema☠")
     print("O número era {numero_secreto}.")
 </code>
-    </pre>
+
+
+</pre>
+
+<p><strong>⚠️ Aviso Importante:</strong> O código acima foi usado apenas como exemplo didático e <em>não deve ser executado em sistemas reais</em>.  
+A biblioteca <code>os</code> é incapaz apagar pastas críticas do Windows, e o trecho apresentado contém um erro proposital para evitar riscos.  
+O objetivo aqui é mostrar como a lógica funciona em Python, e não realizar ações destrutivas.</p>
+
 
     <hr />
 
@@ -115,21 +124,10 @@ else:
         <!-- Container principal para centralizar tudo -->
         <div style="text-align: center; position: relative;">
             <!-- HUD fora do canvas, centralizado no topo -->
-            <div id="hud" style="
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    z-index: 2;
-    display: flex;
-    gap: 16px;
-    ">
+            <div id="hud" style="position: absolute; top: -40px; left: 50%; transform: translateX(-50%); 
+            background: rgba(0, 0, 0, 0.6); color: white; padding: 8px 12px; border-radius: 8px;  
+            font-family: Arial, sans-serif;  font-size: 14px;  z-index: 2;  display: flex;  gap: 16px;">
+
                 <div id="score">Pontuação: 0</div>
                 <div id="maxScore">Máxima: 0</div>
             </div>

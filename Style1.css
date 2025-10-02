@@ -64,6 +64,8 @@ ul {
                HUD DE NAVEGAÇÃO
 ===============================================*/
 nav {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin-bottom: 2em;
   background-color: #2f3031;
