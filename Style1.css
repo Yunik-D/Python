@@ -9,7 +9,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #dddddd;
+  background: #a0a0a0;
   color: #000000;
   line-height: 1.6;
   padding: 20px;
@@ -422,7 +422,7 @@ figcaption{
                MODO ESCURO / TEMA
 ===============================================*/
 body.dark {
-  background: #121212;
+  background: #1f1f1f;
   color: #fff;
 }
 
