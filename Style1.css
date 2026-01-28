@@ -422,7 +422,7 @@ figcaption{
                MODO ESCURO / TEMA
 ===============================================*/
 body.dark {
-  background: #3a3838;
+  background: black;
   color: #fff;
 }
 
