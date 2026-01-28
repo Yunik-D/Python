@@ -6,10 +6,10 @@
 ![Repo Size](https://img.shields.io/github/repo-size/Yunik-D/Python)
 ![Last Commit](https://img.shields.io/github/last-commit/Yunik-D/Python)
 
-Este repositório abriga um **site educacional dedicado à linguagem de programação Python**, desenvolvido com o propósito de **apresentar, explicar e difundir os fundamentos da linguagem** de forma clara, didática e acessível.
+Este repositório abriga um **site educacional dedicado à linguagem de programação Python**, concebido com o propósito de **apresentar, explicar e difundir seus fundamentos** de maneira clara, didática e acessível.
 
-O conteúdo aqui reunido foi concebido com enfoque acadêmico, servindo como material de apoio aos estudos e como instrumento de consulta para aqueles que desejam iniciar-se ou aprofundar-se no universo da linguagem Python.
-Caso sinta-se interessado(a), peço que visite a seção de recomendações sobre a linguagem.
+O conteúdo aqui reunido foi desenvolvido com enfoque acadêmico, servindo como **material de apoio aos estudos** e como instrumento de consulta para aqueles que desejam iniciar-se ou aprofundar-se no universo da linguagem Python.  
+Caso desperte interesse, recomenda-se a visita à seção de **recomendações sobre a linguagem**, disponível no próprio site.
 
 🔗 **Acesse o site:**  
 https://yunik-d.github.io/Python/
@@ -18,15 +18,15 @@ https://yunik-d.github.io/Python/
 
 ## 📌 Sobre o Projeto
 
-O presente projeto consiste em um **site informativo sobre a linguagem Python**, abordando conceitos essenciais e aspectos introdutórios da linguagem, tais como:
+O presente projeto consiste em um **site informativo acerca da linguagem Python**, no qual são abordados conceitos essenciais e aspectos introdutórios, tais como:
 
-- História e propósito da linguagem Python  
+- A história e o propósito da linguagem Python  
 - Conceitos fundamentais de programação  
-- Sintaxe básica e exemplos explicativos  
+- Sintaxe básica acompanhada de exemplos explicativos  
 - Estruturas de controle e organização do código  
-- Importância e aplicações da linguagem no cenário atual  
+- A relevância e as aplicações da linguagem no cenário tecnológico atual  
 
-O conteúdo foi estruturado de modo a favorecer a **compreensão progressiva**, tornando o aprendizado mais fluido e consistente.
+O conteúdo foi estruturado de modo a favorecer a **compreensão progressiva**, permitindo ao leitor assimilar os conceitos de forma gradual, fluida e consistente.
 
 ---
 
@@ -35,10 +35,10 @@ O conteúdo foi estruturado de modo a favorecer a **compreensão progressiva**, 
 Este projeto tem por objetivos principais:
 
 - Apresentar a linguagem Python de forma didática e acessível  
-- Servir como material de estudo e revisão  
+- Servir como material de estudo, revisão e consulta  
 - Consolidar conhecimentos adquiridos em ambiente acadêmico  
-- Exercitar a criação e organização de conteúdo técnico em formato web  
-- Desenvolver um projeto educacional publicado via GitHub Pages  
+- Exercitar a criação, organização e apresentação de conteúdo técnico em formato web  
+- Desenvolver e manter um projeto educacional publicado por meio do GitHub Pages  
 
 ---
 
@@ -49,13 +49,13 @@ Este projeto tem por objetivos principais:
 | **HTML5** | Estruturação das páginas |
 | **CSS3** | Estilização e organização visual |
 | **JavaScript** | Interatividade e recursos dinâmicos |
-| **GitHub Pages** | Hospedagem do site |
+| **GitHub Pages** | Hospedagem e publicação do site |
 
 ---
 
 ## 🌐 Publicação
 
-O site encontra-se publicado por meio do **GitHub Pages**, permitindo acesso público e gratuito ao conteúdo.
+O site encontra-se publicado por meio do **GitHub Pages**, possibilitando acesso público e gratuito ao conteúdo educacional desenvolvido.
 
 🔗 https://yunik-d.github.io/Python/
 
@@ -63,7 +63,7 @@ O site encontra-se publicado por meio do **GitHub Pages**, permitindo acesso pú
 
 ## 📂 Estrutura do Repositório
 
-A organização do repositório segue a estrutura típica de um projeto web, com separação entre arquivos de marcação, estilos e scripts, visando facilitar a manutenção e evolução do conteúdo.
+A organização do repositório segue a estrutura típica de um projeto web, com separação entre arquivos de marcação, estilos e scripts, o que favorece a manutenção, a legibilidade e a evolução contínua do conteúdo.
 
 ---
 
@@ -77,4 +77,3 @@ estudo teórico da linguagem à exposição prática de seus conceitos em ambien
 ## 📜 Licença
 
 Projeto desenvolvido com **finalidade educacional**, estando livre para estudo, adaptação e utilização como material de aprendizado.
-
